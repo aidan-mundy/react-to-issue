@@ -1,0 +1,31 @@
+{
+  "name": "react-to-issue",
+  "version": "1.0.0",
+  "description": "Add a reaction to an issue",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "package": "ncc build index.js -o dist",
+    "test": "eslint index.js && jest --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidan-mundy/react-to-issue.git"
+  },
+  "keywords": [],
+  "author": "Aidan Mundy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aidan-mundy/react-to-issue/issues"
+  },
+  "homepage": "https://github.com/aidan-mundy/react-to-issue#readme",
+  "dependencies": {
+    "@actions/core": "1.5.0",
+    "@actions/github": "5.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "0.30.0",
+    "eslint": "^7.32.0",
+    "jest": "27.1.0"
+  }
+}
