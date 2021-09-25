@@ -14,7 +14,7 @@ I have since modified the code to add reactions to issues, and I am releasing th
 
 ```yml
       - name: Add reactions
-        uses: aidan-mundy/react-to-issue@v1
+        uses: aidan-mundy/react-to-issue@v1.INSERT.VERSION
         with:
           issue-number: 9
           reactions: +1, hooray, laugh
