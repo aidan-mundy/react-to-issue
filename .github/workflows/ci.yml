@@ -109,7 +109,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: Update distribution
+          commit-message: Auto update distribution
           title: Update distribution
           body: |
             - Updates the distribution for changes on `main`
@@ -118,3 +118,5 @@ jobs:
 
             [1]: https://github.com/peter-evans/create-pull-request
           branch: update-distribution
+          reviewers: aidan-mundy
+          delete-branch: true
