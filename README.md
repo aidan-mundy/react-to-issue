@@ -25,9 +25,9 @@ I've repurposed the code for adding reactions to issues and pull requests, and I
 | Name | Description | Default |
 | --- | --- | --- |
 | `token` | `GITHUB_TOKEN` (`issues: write`, `pull-requests: write`) or a `repo` scoped [PAT](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). | `GITHUB_TOKEN` |
-| `repository` | The full name of the repository to work in. | Current repository |
+| `repository` | The full name of the repository (OWNER/REPO) to work in. | Current repository |
 | `issue-number` | The number of the issue or pull request to react to. | |
-| `reactions` | A comma separated list of reactions to add to the issue/pull request. (`+1`, `-1`, `laugh`, `confused`, `heart`, `hooray`, `rocket`, `eyes`) | |
+| `reactions` | A comma separated list of reactions to add. (`+1`, `-1`, `laugh`, `confused`, `heart`, `hooray`, `rocket`, `eyes`) | |
 
 Note: In *public* repositories this action does not work in `pull_request` workflows when triggered by forks.
 Any attempt will be met with the error, `Resource not accessible by integration`.
