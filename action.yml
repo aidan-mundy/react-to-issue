@@ -1,18 +1,18 @@
 #This code was originally sourced from https://github.com/peter-evans/create-or-update-comment subject to the MIT License under copyright of Peter Evans.
 name: 'React To Issue'
-description: 'Add a reaction to an issue'
+description: 'Add a reaction to an issue or pull request'
 inputs:
   token:
     description: 'GITHUB_TOKEN or a repo scoped PAT.'
     default: ${{ github.token }}
   repository:
-    description: 'The full name of the repository (OWNER/REPO) in which to create or update a comment.'
+    description: 'The full name of the repository (OWNER/REPO) to work in.'
     default: ${{ github.repository }}
   issue-number:
-    description: 'The number of the issue or pull request in which to create a comment.'
+    description: 'The number of the issue or pull request to react to.'
     required: true
   reactions:
-    description: 'A comma separated list of reactions to add to the comment.'
+    description: 'A comma separated list of reactions to add. (+1, -1, laugh, confused, heart, hooray, rocket, eyes)'
     required: true
 runs:
   using: 'node16'
